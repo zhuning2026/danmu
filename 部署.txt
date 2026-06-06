@@ -1,0 +1,44 @@
+### 前端部署
+
+1. 本地运行： npm run clean && npm run build
+
+2. 把 public/ 文件夹里的所有内容上传到服务器网站根目录
+
+### 后端部署
+
+1. 把根目录下的这4个文件上传到服务器 /www/wwwroot/backend/ ：
+   - server.js
+   - package.json
+   - package-lock.json
+   - comments.json
+2. 在服务器运行： cd /www/wwwroot/backend && npm install
+
+3. 用PM2启动： pm2 start server.js --name comment-api
+
+4. 配置Nginx反向代理 
+
+#SSL-END
+    
+        # 弹幕系统API反向代理
+    location /api {
+        proxy_pass http://127.0.0.1:3001;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header REMOTE-HOST $remote_addr;
+        
+        # 支持跨域
+        add_header Access-Control-Allow-Origin *;
+        add_header Access-Control-Allow-Methods 'GET, POST, PUT, DELETE, OPTIONS';
+        add_header Access-Control-Allow-Headers 'DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization';
+        
+        # 处理OPTIONS预检请求
+        if ($request_method = 'OPTIONS') {
+            return 204;
+        }
+    }
+
+    #ERROR-PAGE-START  错误页配置，可以注释、删除或修改
+    #error_page 404 /404.html;
+    #error_page 502 /502.html;
+    #ERROR-PAGE-END

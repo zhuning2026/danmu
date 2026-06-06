@@ -1,0 +1,128 @@
+<div class="danmaku-container">
+      <div class="danmaku-header">
+        <h3 class="danmaku-title">弹幕互动</h3>
+        <button class="danmaku-scroll-btn" id="danmaku-scroll-btn" title="暂停/继续滚动">
+          <span class="scroll-btn-text">停止滚动</span>
+        </button>
+      </div>
+      
+      <div class="danmaku-list" id="danmaku-list"></div>
+      
+      <div class="emoji-picker" id="emoji-picker">
+        <div class="emoji-grid">
+          <span class="emoji-item" data-emoji="ok"><img src="/img/QQ/OK.gif" alt="OK" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="aini"><img src="/img/QQ/aini.gif" alt="爱你" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="aixin"><img src="/img/QQ/aixin.gif" alt="爱心" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="aoman"><img src="/img/QQ/aoman.gif" alt="傲慢" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="baiyan"><img src="/img/QQ/baiyan.gif" alt="白眼" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="bangbangtang"><img src="/img/QQ/bangbangtang.gif" alt="棒棒糖" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="baojin"><img src="/img/QQ/baojin.gif" alt="爆筋" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="baoquan"><img src="/img/QQ/baoquan.gif" alt="抱拳" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="bishi"><img src="/img/QQ/bishi.gif" alt="鄙视" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="bizui"><img src="/img/QQ/bizui.gif" alt="闭嘴" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="cahan"><img src="/img/QQ/cahan.gif" alt="擦汗" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="caidao"><img src="/img/QQ/caidao.gif" alt="菜刀" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="chi"><img src="/img/QQ/chi.gif" alt="吃" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="ciya"><img src="/img/QQ/ciya.gif" alt="呲牙" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="dabing"><img src="/img/QQ/dabing.gif" alt="大兵" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="daku"><img src="/img/QQ/daku.gif" alt="大哭" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="dan"><img src="/img/QQ/dan.gif" alt="弹" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="deyi"><img src="/img/QQ/deyi.gif" alt="得意" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="doge"><img src="/img/QQ/doge.gif" alt="doge" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="fadai"><img src="/img/QQ/fadai.gif" alt="发呆" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="fanu"><img src="/img/QQ/fanu.gif" alt="发怒" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="fendou"><img src="/img/QQ/fendou.gif" alt="奋斗" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="ganga"><img src="/img/QQ/ganga.gif" alt="尴尬" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="gouyin"><img src="/img/QQ/gouyin.gif" alt="勾引" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="guzhang"><img src="/img/QQ/guzhang.gif" alt="鼓掌" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="haixiu"><img src="/img/QQ/haixiu.gif" alt="害羞" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="hanxiao"><img src="/img/QQ/hanxiao.gif" alt="憨笑" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="haobang"><img src="/img/QQ/haobang.gif" alt="好棒" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="haqian"><img src="/img/QQ/haqian.gif" alt="哈欠" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="hecai"><img src="/img/QQ/hecai.gif" alt="喝彩" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="hexie"><img src="/img/QQ/hexie.gif" alt="和谐" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="huaixiao"><img src="/img/QQ/huaixiao.gif" alt="坏笑" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="jie"><img src="/img/QQ/jie.gif" alt="饥饿" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="jingkong"><img src="/img/QQ/jingkong.gif" alt="惊恐" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="jingxi"><img src="/img/QQ/jingxi.gif" alt="惊喜" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="jingya"><img src="/img/QQ/jingya.gif" alt="惊讶" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="juhua"><img src="/img/QQ/juhua.gif" alt="菊花" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="keai"><img src="/img/QQ/keai.gif" alt="可爱" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="kelian"><img src="/img/QQ/kelian.gif" alt="可怜" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="koubi"><img src="/img/QQ/koubi.gif" alt="抠鼻" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="ku"><img src="/img/QQ/ku.gif" alt="哭" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="kuaikule"><img src="/img/QQ/kuaikule.gif" alt="快哭了" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="kulou"><img src="/img/QQ/kulou.gif" alt="骷髅" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="kun"><img src="/img/QQ/kun.gif" alt="困" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="lanqiu"><img src="/img/QQ/lanqiu.gif" alt="篮球" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="leiben"><img src="/img/QQ/leiben.gif" alt="累趴" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="lenghan"><img src="/img/QQ/lenghan.gif" alt="冷汗" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="liuhan"><img src="/img/QQ/liuhan.gif" alt="流汗" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="liulei"><img src="/img/QQ/liulei.gif" alt="流泪" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="nanguo"><img src="/img/QQ/nanguo.gif" alt="难过" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="penxue"><img src="/img/QQ/penxue.gif" alt="喷血" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="piezui"><img src="/img/QQ/piezui.gif" alt="撇嘴" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="pijiu"><img src="/img/QQ/pijiu.gif" alt="啤酒" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="qiang"><img src="/img/QQ/qiang.gif" alt="强" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="qiaoda"><img src="/img/QQ/qiaoda.gif" alt="敲打" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="qinqin"><img src="/img/QQ/qinqin.gif" alt="亲亲" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="qiudale"><img src="/img/QQ/qiudale.gif" alt="求搭了" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="quantou"><img src="/img/QQ/quantou.gif" alt="拳头" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="saorao"><img src="/img/QQ/saorao.gif" alt="骚扰" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="se"><img src="/img/QQ/se.gif" alt="色" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="shengli"><img src="/img/QQ/shengli.gif" alt="胜利" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="shouqiang"><img src="/img/QQ/shouqiang.gif" alt="手枪" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="shuai"><img src="/img/QQ/shuai.gif" alt="衰" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="shui"><img src="/img/QQ/shui.gif" alt="睡" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="tiaopi"><img src="/img/QQ/tiaopi.gif" alt="调皮" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="touxiao"><img src="/img/QQ/touxiao.gif" alt="偷笑" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="tu"><img src="/img/QQ/tu.gif" alt="吐" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="tuosai"><img src="/img/QQ/tuosai.gif" alt="托腮" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="weiqu"><img src="/img/QQ/weiqu.gif" alt="委屈" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="weixiao"><img src="/img/QQ/weixiao.gif" alt="微笑" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="woshou"><img src="/img/QQ/woshou.gif" alt="握手" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="wozuimei"><img src="/img/QQ/wozuimei.gif" alt="我最美" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="wunai"><img src="/img/QQ/wunai.gif" alt="无奈" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="xia"><img src="/img/QQ/xia.gif" alt="吓" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="xiaojiujie"><img src="/img/QQ/xiaojiujie.gif" alt="纠结" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="xiaoku"><img src="/img/QQ/xiaoku.gif" alt="笑哭" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="xiaoyanger"><img src="/img/QQ/xiaoyanger.gif" alt="小样儿" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="xieyanxiao"><img src="/img/QQ/xieyanxiao.gif" alt="斜眼笑" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="xigua"><img src="/img/QQ/xigua.gif" alt="西瓜" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="xu"><img src="/img/QQ/xu.gif" alt="嘘" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="yangtuo"><img src="/img/QQ/yangtuo.gif" alt="羊驼" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="yinxian"><img src="/img/QQ/yinxian.gif" alt="阴险" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="yiwen"><img src="/img/QQ/yiwen.gif" alt="疑问" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="youhengheng"><img src="/img/QQ/youhengheng.gif" alt="右哼哼" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="youling"><img src="/img/QQ/youling.gif" alt="幽灵" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="yun"><img src="/img/QQ/yun.gif" alt="晕" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="zaijian"><img src="/img/QQ/zaijian.gif" alt="再见" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="zhayanjian"><img src="/img/QQ/zhayanjian.gif" alt="眨眼睛" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="zhemo"><img src="/img/QQ/zhemo.gif" alt="折磨" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="zhouma"><img src="/img/QQ/zhouma.gif" alt="咒骂" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="zhuakuang"><img src="/img/QQ/zhuakuang.gif" alt="抓狂" onerror="this.style.display='none'"></span>
+                <span class="emoji-item" data-emoji="zuohengheng"><img src="/img/QQ/zuohengheng.gif" alt="左哼哼" onerror="this.style.display='none'"></span>
+              </div>
+            </div>
+      
+      <div class="danmaku-input-area">
+        <div class="input-group">
+          <div class="emoji-picker-wrapper">
+            <button class="emoji-btn" id="emoji-btn">
+              <img src="/wx/641.png" alt="表情" class="emoji-btn-img">
+            </button>
+          </div>
+          <input type="text" id="danmaku-input" class="danmaku-input" placeholder="发表你的看法" maxlength="200">
+          <button class="danmaku-submit" id="danmaku-submit">发表</button>
+        </div>
+      </div>
+      
+      <div class="danmaku-footer">
+        <div class="danmaku-author">作者：小朱 | QQ：623869193（微信同号）</div>
+        <div class="danmaku-powered">
+          <a href="https://hexo.io/zh-cn/" target="_blank" rel="nofollow noopener"><span>hexo</span></a>
+          <i class="iconfont icon-love"></i>
+          <a href="https://fluid.ist/" target="_blank" rel="nofollow noopener"><span>fluid</span></a>
+        </div>
+      </div>
+</div>

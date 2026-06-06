@@ -1,0 +1,46 @@
+<%
+var banner_img_height = parseFloat(page.banner_img_height || theme.index.banner_img_height)
+%>
+
+<div class="header-inner" style="height: <%= banner_img_height %>vh;">
+  <%- partial('_partials/header/navigation') %>
+  <%- partial('_partials/header/banner') %>
+</div>
+<!-- <audio id="bg-music">
+
+  <script>
+  // 音乐列表
+  const playlist = [
+    "/mp3/zhu.mp3",
+    "/mp3/hua.mp3",
+  ];
+  
+  let currentIndex = 0;
+  const audio = document.getElementById('bg-music');
+  audio.volume = 0.5;
+  
+  // 播放当前歌曲
+  function playSong() {
+    audio.src = playlist[currentIndex];
+    audio.play().catch(() => {});
+  }
+  
+  // 一首歌播放完自动下一首
+  audio.addEventListener('ended', () => {
+    currentIndex = (currentIndex + 1) % playlist.length;
+    playSong();
+  });
+  
+  // 页面加载自动播放
+  window.addEventListener('DOMContentLoaded', playSong);
+  
+  // 页面隐藏暂停，显示时**继续播放（不重头）**
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      audio.pause();
+    } else {
+      // 这里只 play，不重新设置 src，就会接着暂停位置继续播
+      audio.play().catch(() => {});
+    }
+  });
+  </script> -->

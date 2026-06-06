@@ -1,0 +1,152 @@
+.sidebar-comments
+  position sticky
+  top 80px
+  background var(--card-bg-color)
+  border-radius .5rem
+  padding .75rem
+  box-shadow 0 2px 12px rgba(0, 0, 0, 0.08)
+  max-height calc(100vh - 120px)
+  display flex
+  flex-direction column
+
+.comments-header
+  padding-bottom .5rem
+  border-bottom 1px solid var(--border-color)
+  margin-bottom .5rem
+
+.comments-title
+  font-size .875rem
+  font-weight 600
+  color var(--text-color)
+  margin 0
+  display flex
+  align-items center
+  gap .375rem
+
+  i
+    font-size .75rem
+    color #3385ff
+
+.comments-scroll-container
+  flex 1
+  overflow-y auto
+  max-height 20rem
+  scrollbar-width thin
+  scrollbar-color var(--scrollbar-color) transparent
+
+  &::-webkit-scrollbar
+    width 4px
+
+  &::-webkit-scrollbar-track
+    background transparent
+
+  &::-webkit-scrollbar-thumb
+    background-color var(--scrollbar-color)
+    border-radius 2px
+
+.comments-input-area
+  padding-top .5rem
+  border-top 1px solid var(--border-color)
+  margin-top .5rem
+
+.comment-input
+  width 100%
+  min-height 4rem
+  padding .5rem .625rem
+  font-size .8rem
+  border 1px solid var(--border-color)
+  border-radius .375rem
+  background var(--body-bg-color)
+  color var(--text-color)
+  resize none
+  outline none
+  transition all .2s ease
+  box-sizing border-box
+
+  &:focus
+    border-color #3385ff
+    box-shadow 0 0 0 2px rgba(51, 133, 255, 0.1)
+
+  &::placeholder
+    color var(--sec-text-color)
+
+.comment-actions
+  display flex
+  justify-content space-between
+  align-items center
+  margin-top .5rem
+
+.char-count
+  font-size .7rem
+  color var(--sec-text-color)
+
+.submit-comment
+  padding .375rem 1rem
+  font-size .75rem
+  font-weight 500
+  color #fff
+  background linear-gradient(135deg, #3385ff 0%, #1e72e8 100%)
+  border none
+  border-radius 1rem
+  cursor pointer
+  transition all .2s ease
+
+  &:hover
+    transform translateY(-1px)
+    box-shadow 0 2px 8px rgba(51, 133, 255, 0.3)
+
+  &:active
+    transform translateY(0)
+
+  &:disabled
+    background #ccc
+    cursor not-allowed
+    transform none
+    box-shadow none
+
+.sidebar-comment-item
+  padding .5rem
+  border-bottom 1px solid rgba(0, 0, 0, 0.05)
+  transition background .2s ease
+
+  &:last-child
+    border-bottom none
+
+  &:hover
+    background rgba(0, 0, 0, 0.03)
+
+.sidebar-comment-author
+  display flex
+  align-items center
+  gap .375rem
+  margin-bottom .25rem
+
+.sidebar-comment-avatar
+  width 1.5rem
+  height 1.5rem
+  border-radius 50%
+  background var(--border-color)
+  overflow hidden
+
+  img
+    width 100%
+    height 100%
+    object-fit cover
+
+.sidebar-comment-name
+  font-size .7rem
+  color var(--text-color)
+  font-weight 500
+
+.sidebar-comment-content
+  font-size .75rem
+  color var(--text-color)
+  line-height 1.5
+  word-break break-word
+  margin 0
+
+.sidebar-comment-time
+  font-size .65rem
+  color var(--sec-text-color)
+  margin-top .25rem
+  display block
