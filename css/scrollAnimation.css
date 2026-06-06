@@ -1,0 +1,5 @@
+.index-card {
+  opacity: calc(var(--state) * 1);
+  transform: translateX(calc((1 - var(--state)) * -20px)) translateY(calc((1 - var(--state)) * 20px));
+  transition: opacity 0.5s, transform 0.5s;
+}
